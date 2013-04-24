@@ -32,7 +32,7 @@ endif;
     <meta charset="utf-8">
     <title>Video Standard Example</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="entity-share:video" content="/video.json">
+    <meta property="entity-share:video" content="http://<?php echo $_SERVER['HTTP_HOST']; ?>/video.json">
 
     <!-- Le styles -->
     <link href="/css/bootstrap.css" rel="stylesheet">
@@ -45,10 +45,9 @@ endif;
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="/js/html5shiv.js"></script>
-    <![endif]-->
-  <style type="text/css"></style><meta name="chromesniffer" id="chromesniffer_meta" content="{&quot;Bootstrap&quot;:-1}"><script type="text/javascript" src="chrome-extension://homgcnaoacgigpkkljjjekpignblkeae/detector.js"></script></head>
+    <![endif]--></head>
 
-  <body class=" hasGoogleVoiceExt">
+  <body class="">
 
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
