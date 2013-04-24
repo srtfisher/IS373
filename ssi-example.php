@@ -10,9 +10,9 @@ if (isset($_GET['url'])) :
 
   if ($meta == NULL)
     die( json_encode(['error' => 'Invalid URL']));
-  var_dump($meta->content);
-  exit;
-  $json = file_get_contents('./video.json');
+
+  $json_file = $meta->content;
+  $json = file_get_contents($json_file);
   $json = json_decode($json);
 
   $video_html = '<video width="400" preload="metadata" controls>';
