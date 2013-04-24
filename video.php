@@ -1,14 +1,3 @@
-<?php
-if (isset($_POST['video_url'])) :
-  $meta_tags = (array) get_meta_tags($_POST['video_url']);
-
-  if (count($meta_tags) == 0)
-    die(json_encode(['error' => 'No standard tags found']));
-
-  var_dump($meta_tags);
-  exit;
-endif;
-?>
 <!DOCTYPE html>
 <html lang="en"><head>
     <meta charset="utf-8">
