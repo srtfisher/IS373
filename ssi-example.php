@@ -1,5 +1,14 @@
 <?php
 if (isset($_GET['url'])) :
+  require('dom.php');
+  
+  $dom = file_get_html($_GET['url']);
+  $meta = $dom->find('meta[property="entity-share:video"]', 0);
+
+  if ($meta == NULL)
+    die( json_encode(['error' => 'Invalid URL']));
+  var_dump($meta->content);
+  exit;
   $json = file_get_contents('./video.json');
   $json = json_decode($json);
 
