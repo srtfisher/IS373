@@ -1,9 +1,9 @@
 <?php
-error_reporting(-1)
+error_reporting(-1);
 ini_set('display_errors', 'on');
 
 if (isset($_GET['url'])) :
-  require('dom.php');
+  require(__DIR__.'/dom.php');
   
   $dom = file_get_html($_GET['url']);
   $meta = $dom->find('meta[property="entity-share:video"]', 0);
