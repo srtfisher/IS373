@@ -3,6 +3,7 @@ error_reporting(-1);
 ini_set('display_errors', 'on');
 
 if (isset($_GET['url'])) :
+  /*
   require(__DIR__.'/dom.php');
   
   $dom = file_get_html($_GET['url']);
@@ -14,7 +15,8 @@ if (isset($_GET['url'])) :
   $json_file = $meta->content;
   $json = file_get_contents($json_file);
   $json = json_decode($json);
-
+  */
+  $json = json_decode(file_get_contents('./video.json'));
   $video_html = '<video width="400" preload="metadata" controls>';
   foreach($json->video as $v)
     $video_html .= '<source src="'.$v->url.'" type="'.$v->type.'" />';
