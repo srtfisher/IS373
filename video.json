@@ -1,0 +1,16 @@
+{
+	"title": "Cats Being Stupid",
+	"url": "http://localhost:3000/video.php",
+	"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia, enim vitae vestibulum volutpat, eros felis mattis mauris, sed elementum dui massa et lorem. Quisque eu massa sapien. Duis cursus eros sodales lacus consectetur eu dapibus augue fermentum. Vivamus tortor eros, faucibus a aliquam eu, tempus eu arcu. Pellentesque nisl neque, egestas quis ultricies id, pretium sed neque. Etiam eu magna vel orci viverra feugiat. Pellentesque ligula eros, sodales eu condimentum ac, venenatis eu ante. Proin lorem est, mattis quis semper at, semper id velit.",
+	"thumbnail": "http://placehold.it/450x300",
+	"video": [
+		{
+			"type": "video/mp4",
+			"url": "http://html5demos.com/assets/dizzy.mp4"
+		},
+		{
+			"type": "video/webm",
+			"url": "http://html5demos.com/assets/dizzy.webm"
+		}
+	]
+}
