@@ -59,7 +59,7 @@ endif;
       <hr />
       <div class="container">
         <form>
-          <input type="text" placeholder="http://" value="http://<?php echo $_SERVER['HTTP_HOST']; ?>/video.php" id="video-input" class="span8" />
+          <input type="text" placeholder="http://" disabled value="http://<?php echo $_SERVER['HTTP_HOST']; ?>/video.php" id="video-input" class="span8" />
 
           <button type="submit" class="btn btn-primary btn-large" id="form-btn">Get Videos</button>
         </form>
